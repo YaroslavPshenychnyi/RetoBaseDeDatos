@@ -6,8 +6,8 @@ limpiadores(#id,nombre,apellido,salario,fecha_inicio,zona_asignada,mañana,tarde
 
 habitacion(#id,numero,tipo,capacidad,disponible,reservada,mantenimiento,precio_noche)
 
-reservas
+reservas(#id, fecha_inicio, fecha_fin, pendiente, confirmada, cancelada)
 
-pago
+pago(#id, fecha, importe, tarjeta, efectivo, transferencia)
 
-clientes
+clientes(#id, nombre, apellido, pais, correo_electronico, codigo_postal, calle, ciudad, movil, fijo)
