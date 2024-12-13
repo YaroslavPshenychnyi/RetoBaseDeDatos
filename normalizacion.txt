@@ -1,0 +1,13 @@
+hoteles(#id,nombre,codigo_postal,pais,ciudad,calle,categoria,fijo,movil)
+
+administradores(#id,nombre,apellido,salario,fecha_inicio,departamento,nivel)
+
+limpiadores(#id,nombre,apellido,salario,fecha_inicio,zona_asignada,mañana,tarde,noche)
+
+habitacion(#id,numero,tipo,capacidad,disponible,reservada,mantenimiento,precio_noche)
+
+reservas
+
+pago
+
+clientes
