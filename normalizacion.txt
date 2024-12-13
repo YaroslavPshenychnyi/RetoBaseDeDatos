@@ -1,13 +1,13 @@
-hoteles(#id,nombre,codigo_postal,pais,ciudad,calle,categoria,fijo,movil)
+hoteles(#id, nombre, codigo_postal, pais, ciudad, calle, categoria, fijo, movil, -(id_empleados, id_habitacion))
 
-administradores(#id,nombre,apellido,salario,fecha_inicio,departamento,nivel)
+administradores(#id, nombre, apellido, salario, fecha_inicio, departamento, nivel)
 
-limpiadores(#id,nombre,apellido,salario,fecha_inicio,zona_asignada,mañana,tarde,noche)
+limpiadores(#id, nombre, apellido, salario, fecha_inicio, zona_asignada, mañana, tarde, noche)
 
-habitacion(#id,numero,tipo,capacidad,disponible,reservada,mantenimiento,precio_noche)
+habitacion(#id, numero, tipo, capacidad, disponible, reservada, mantenimiento, precio_noche, -id_reservas)
 
-reservas(#id, fecha_inicio, fecha_fin, pendiente, confirmada, cancelada)
+reservas(#id, fecha_inicio, fecha_fin, pendiente, confirmada, cancelada, -id_pago)
 
 pago(#id, fecha, importe, tarjeta, efectivo, transferencia)
 
-clientes(#id, nombre, apellido, pais, correo_electronico, codigo_postal, calle, ciudad, movil, fijo)
+clientes(#id, nombre, apellido, pais, correo_electronico, codigo_postal, calle, ciudad, movil, fijo, -id_reservas)
