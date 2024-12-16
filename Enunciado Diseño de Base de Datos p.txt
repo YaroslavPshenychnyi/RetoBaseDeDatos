@@ -1,0 +1,43 @@
+Enunciado: Diseño de Base de Datos para un Sistema de Gestión Hotelera
+
+La cadena de hoteles "Viajero Feliz" desea implementar un sistema de gestión para sus operaciones. El sistema debe incluir los siguientes módulos principales:
+
+Gestión de Hoteles: Registro de los datos de los hoteles de la cadena, incluyendo nombre, dirección, y número de estrellas.
+Gestión de Clientes: Información de los clientes, como nombre, correo electrónico y número de teléfono.
+Reservas: Registro de las reservas realizadas por los clientes. Cada reserva debe incluir el cliente que la realizó, el hotel, la fecha de inicio, la fecha de fin, y el número de habitación.
+Empleados: Gestión del personal que trabaja en cada hotel, con información como nombre, puesto y salario.
+Administradores: Registro de los administradores de cada hotel, quienes tienen permisos especiales en el sistema.
+
+
+Actividades:
+Diseñe el esquema de base de datos relacional para el sistema descrito anteriormente, incluyendo:
+
+Las tablas necesarias.
+Las claves primarias y foráneas.
+Los tipos de datos adecuados para cada atributo.
+Cree un diagrama de entidad-relación (ER) que represente el diseño de su base de datos.
+
+Escriba los comandos SQL necesarios para crear las tablas de su esquema.
+
+Explique cómo garantizaría la integridad referencial y cómo manejaría las relaciones muchos a muchos, si las hubiera.
+
+Consideraciones:
+Se debe tener en cuenta que un cliente puede realizar varias reservas, pero cada reserva está asociada a un único hotel.
+Un empleado trabaja en un solo hotel, pero un hotel puede tener múltiples empleados.
+Cada hotel tiene uno o más administradores.
+
+____________________________________________________________________________________________________________________________________________
+
+Enunciado de Examen: Diseño de Base de Datos para un Sistema de Gestión Hotelera
+
+La cadena hotelera "Viajero Feliz" desea implementar un sistema de gestión integral que permita administrar sus operaciones de manera eficiente. Este sistema debe incluir información sobre los hoteles de la cadena, sus empleados, los clientes que los visitan y las reservas realizadas. A continuación, se describe la estructura general que debe cubrir el diseño de la base de datos:
+
+Hoteles: Cada hotel tiene un nombre, una dirección, un número de estrellas y un identificador único. Es importante que el sistema permita identificar fácilmente a qué hotel están asociadas las reservas y los empleados.
+
+Clientes: La base de datos debe registrar información de los clientes, incluyendo nombre completo, correo electrónico y número de teléfono. Esto permitirá realizar un seguimiento de los clientes y asociarlos con sus reservas.
+
+Reservas: Las reservas son el núcleo del sistema. Cada reserva debe incluir información sobre el cliente que la realiza, el hotel al que pertenece, la fecha de inicio y de fin, el número de habitación, y el estado de la reserva (activa, cancelada, finalizada).
+
+Empleados: Cada hotel cuenta con un equipo de empleados. De cada empleado, es necesario registrar su nombre, puesto, salario y el hotel en el que trabaja. Un empleado no puede trabajar en más de un hotel al mismo tiempo.
+
+Administradores: Cada hotel tiene al menos un administrador encargado de las operaciones generales. Los administradores tienen permisos especiales dentro del sistema y deben estar claramente diferenciados de otros empleados.
